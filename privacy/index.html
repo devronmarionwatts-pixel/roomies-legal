@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<!--
+  PLACEHOLDERS THE FOUNDER MUST FILL BEFORE PUBLISHING:
+  - {{COMPANY_LEGAL_NAME}}  : No explicit Inc/LLC legal entity name was found in the repository.
+                              The bundle id (com.Sentiencecai.Roomies) implies an org "Sentiencecai" but this is not a verified legal name.
+  - {{CONTACT_EMAIL}}       : No production support/privacy contact address exists in the repo.
+                              (admin@roomies.dev and smoke-test@roomies.dev are local-dev/test only, NOT support addresses.)
+                              Suggested value to set up: privacy@roomiesapp.app
+  - {{COMPANY_ADDRESS}}     : Postal address for the data controller (required for GDPR/CCPA notices).
+  - {{DPO_OR_EU_REP}}       : (Only if required) EU/UK representative under GDPR Art. 27, if you have no EU establishment.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Roomies</title>
+<style>
+  :root {
+    --bg: #f7f8fa;
+    --card: #ffffff;
+    --ink: #1f2733;
+    --muted: #5b6573;
+    --accent: #3a6df0;
+    --accent-soft: #eef2fe;
+    --border: #e3e7ee;
+    --radius: 10px;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+    line-height: 1.65;
+    font-size: 17px;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px 64px;
+  }
+  header.site {
+    background: linear-gradient(135deg, #3a6df0 0%, #5a4ff0 100%);
+    color: #fff;
+    padding: 40px 20px 34px;
+    text-align: center;
+  }
+  header.site .inner {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  header.site .brand {
+    font-size: 15px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    opacity: .9;
+    font-weight: 600;
+  }
+  header.site h1 {
+    margin: 8px 0 6px;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #fff;
+    border: 0;
+    padding: 0;
+  }
+  header.site .dates {
+    font-size: 14px;
+    opacity: .92;
+  }
+  main {
+    background: var(--card);
+    margin-top: -22px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    padding: 28px 26px;
+    box-shadow: 0 4px 22px rgba(31, 39, 51, 0.06);
+  }
+  h1, h2, h3 { color: var(--ink); font-weight: 700; }
+  h2 {
+    font-size: 22px;
+    margin: 38px 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--accent-soft);
+    scroll-margin-top: 16px;
+  }
+  h3 {
+    font-size: 18px;
+    margin: 24px 0 8px;
+  }
+  p { margin: 12px 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul, ol { padding-left: 22px; margin: 12px 0; }
+  li { margin: 7px 0; }
+  .lead {
+    font-size: 18px;
+    color: var(--muted);
+  }
+  .toc {
+    background: var(--accent-soft);
+    border: 1px solid #dfe6fb;
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    margin: 22px 0 8px;
+  }
+  .toc h2 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    border: 0;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--muted);
+  }
+  .toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 28px; }
+  .toc li { margin: 4px 0; break-inside: avoid; }
+  @media (max-width: 560px) {
+    .toc ol { columns: 1; }
+    body { font-size: 16px; }
+    header.site h1 { font-size: 25px; }
+    main { padding: 22px 18px; }
+  }
+  .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 16px 0; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 560px;
+    font-size: 15px;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: var(--accent-soft);
+    font-weight: 600;
+  }
+  tr:nth-child(even) td { background: #fafbfd; }
+  .note {
+    background: #fff8e6;
+    border: 1px solid #f3e2a8;
+    border-radius: var(--radius);
+    padding: 12px 16px;
+    margin: 16px 0;
+    font-size: 15px;
+  }
+  .placeholder {
+    background: #ffe9e9;
+    border-radius: 4px;
+    padding: 0 4px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.9em;
+    color: #a11;
+  }
+  .backtop {
+    font-size: 13px;
+    color: var(--muted);
+    display: inline-block;
+    margin-top: 6px;
+  }
+  footer.site {
+    max-width: 760px;
+    margin: 28px auto 0;
+    padding: 0 6px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  footer.site .rule { height: 1px; background: var(--border); margin: 0 0 16px; }
+  footer.site .fineprint {
+    font-size: 12.5px;
+    color: #8a93a1;
+    margin-top: 14px;
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="inner">
+    <div class="brand">Roomies</div>
+    <h1>Privacy Policy</h1>
+    <div class="dates">Effective date &amp; last updated: June 4, 2026</div>
+  </div>
+</header>
+
+<div class="wrap">
+<main>
+
+  <p class="lead">This Privacy Policy explains what information Roomies collects, why we collect it, who we share it with, and the choices and rights you have over your data.</p>
+
+  <nav class="toc" aria-label="Table of contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#scope">Introduction &amp; Scope</a></li>
+      <li><a href="#collect">Information We Collect</a></li>
+      <li><a href="#use">How We Use Your Information</a></li>
+      <li><a href="#legal-bases">Legal Bases (GDPR)</a></li>
+      <li><a href="#processors">Third-Party Processors</a></li>
+      <li><a href="#transfers">International Data Transfers</a></li>
+      <li><a href="#retention">Data Retention</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#rights">Your Privacy Rights</a></li>
+      <li><a href="#deletion">Account &amp; Data Deletion</a></li>
+      <li><a href="#children">Children's Privacy</a></li>
+      <li><a href="#push">Push Notifications</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="scope">1. Introduction &amp; Scope</h2>
+  <p>Roomies ("Roomies," "we," "us," or "our") is a mobile-first application that helps people find compatible roommates. We do this by letting you build a lifestyle profile, complete a compatibility questionnaire, set location preferences, optionally verify your identity, get matched with potential roommates, and chat safely in-app.</p>
+  <p>This Policy applies to the Roomies mobile application and the backend services that power it. It describes how we handle personal information for everyone who creates a Roomies account, regardless of where they live, and it includes specific disclosures for individuals protected by the EU/UK General Data Protection Regulation (GDPR) and the California Consumer Privacy Act as amended by the CPRA (collectively, "CCPA").</p>
+  <p>The data controller responsible for your personal information is Devron Watts, located at 2264 Mackenzie Way, Yuba City, California 95991. By creating an account or using Roomies, you acknowledge the practices described here. If you do not agree, please do not use the app.</p>
+
+  <h2 id="collect">2. Information We Collect</h2>
+  <p>We collect the categories of information below. Most of it is information you provide directly; some comes from your device or from the third-party services we rely on to operate the app.</p>
+
+  <h3>Identity &amp; account information</h3>
+  <p>When you sign up, authentication is handled by Firebase Authentication (email and password, Google Sign-In, or Apple Sign-In). We receive and store your email address, an authentication provider identifier, and, where you provide them, your name and profile picture, and optionally a phone number. We also store account metadata such as your account status, role, when you were last active, and timestamps for when your account was created and updated.</p>
+
+  <h3>Profile information</h3>
+  <p>The profile you build for matching, including your first name, age, gender, a free-text bio (up to 1,000 characters), occupation, school, budget range, desired move-in date, lease term, your city, and whether you are willing to relocate.</p>
+
+  <h3>Location information (precise and approximate)</h3>
+  <p>To match you with roommates in the right place, we store the location and target area you select. These are stored as precise geographic coordinates (full-precision latitude and longitude, not deliberately coarsened) derived from your device or from the place you choose. We also store your search preferences such as search radius, preferred city, acceptable genders, age range, and budget range. Location lookups (city and neighborhood autocomplete and geocoding) are performed through Google Maps Platform via our backend.</p>
+
+  <h3>Photos</h3>
+  <p>The photos you upload to your profile. Image files are uploaded directly to our object storage provider (Cloudflare R2) using time-limited upload links; our database stores the object key and the public URL, along with attributes such as sort order, which photo is primary, dimensions, and file size.</p>
+
+  <h3>Lifestyle questionnaire</h3>
+  <p>Your answers to the compatibility questionnaire, including cleanliness, sleep schedule, noise tolerance, attitudes toward guests, smoking, drinking, and pets, work-from-home habits, hobbies and interests, communication and conflict styles, social level, cooking habits, and shared-space preferences. We also store your "deal breakers" and preference flags (for example, whether pets or smoking are acceptable, or whether a match must be verified).</p>
+
+  <h3>Chat messages &amp; social-graph data</h3>
+  <p>When you match and chat with another user, we store the messages you send (message body, type, sender, timestamps, and read status), the conversations they belong to, and your matches. We also store your swipe actions (like, pass, super-like), blocks you create, and any reports you file or that are filed about you. Please note that chat messages are stored in plaintext on our servers and are <strong>not</strong> end-to-end encrypted.</p>
+
+  <h3>Verification status</h3>
+  <p>If you choose to verify your identity, the document and selfie capture happens inside Stripe Identity's own interface. We do <strong>not</strong> receive or store your raw ID document or selfie image; we store only the verification provider, the resulting status (for example, pending, verified, rejected, or expired), the time of verification, your badge level, and limited session metadata (such as the Stripe session identifier and any error code). Stripe retains the underlying documents under its own policies.</p>
+
+  <h3>Payments &amp; billing information</h3>
+  <p>If you purchase a subscription or a one-time feature (such as a profile boost), Stripe processes the payment through its hosted checkout. We do <strong>not</strong> receive or store your full payment card details. We store billing references such as a Stripe customer identifier, subscription and purchase identifiers, the price/product purchased, amount and currency, and subscription/purchase status.</p>
+
+  <h3>Usage &amp; analytics information</h3>
+  <p>We collect product-analytics events to understand how the app is used and to improve it — for example, sign-in, account-deletion, and verification-flow events, identified by your account identifier — using PostHog and Firebase Analytics. We also keep usage counters such as your last-active time and daily like usage for rate limiting, and our backend keeps operational logs (with request identifiers) to run and debug the service.</p>
+
+  <h3>Device &amp; push-notification tokens</h3>
+  <p>The app is built to support push notifications and will request a notification token from your device.</p>
+  <div class="note">As of the effective date of this Policy, push-notification (device) tokens are <strong>not</strong> persisted in our database and server-side push dispatch is not yet active. If and when we begin storing device push tokens to deliver notifications, this section will be updated to reflect it.</div>
+
+  <h3>Crash &amp; error diagnostics</h3>
+  <p>When the app or our backend encounters an error, we use Sentry to capture diagnostic information such as exception details, stack traces, breadcrumbs, and a sampled set of performance traces, to help us find and fix problems.</p>
+  <p class="backtop"><a href="#scope">↑ Back to top</a></p>
+
+  <h2 id="use">3. How We Use Your Information</h2>
+  <ul>
+    <li><strong>To provide the core service</strong> — create and manage your account, build your profile, run the compatibility questionnaire, generate matches, and enable in-app chat between matched users.</li>
+    <li><strong>To run matching</strong> — apply hard filters (location, budget, move-in window, deal breakers) and compute compatibility scores using your questionnaire answers and preferences.</li>
+    <li><strong>To handle location features</strong> — resolve the cities and neighborhoods you select and find nearby candidates.</li>
+    <li><strong>For identity verification</strong> — let you complete optional ID verification and display a verified badge.</li>
+    <li><strong>For payments</strong> — process subscriptions and one-time purchases and manage your billing.</li>
+    <li><strong>For safety and moderation</strong> — operate blocking and reporting, review reports, and enforce our rules.</li>
+    <li><strong>To communicate with you</strong> — send service-related and notification messages (such as new matches or messages).</li>
+    <li><strong>To improve and secure the app</strong> — understand usage, debug, monitor for crashes and errors, prevent abuse, and protect our users.</li>
+    <li><strong>To comply with the law</strong> — meet legal obligations and respond to lawful requests.</li>
+  </ul>
+
+  <h2 id="legal-bases">4. Legal Bases for Processing (GDPR)</h2>
+  <p>If you are in the European Economic Area or the United Kingdom, we rely on the following legal bases under the GDPR:</p>
+  <div class="table-scroll">
+  <table>
+    <thead><tr><th>Purpose</th><th>Legal basis</th></tr></thead>
+    <tbody>
+      <tr><td>Creating your account and providing matching, profiles, and chat</td><td>Performance of a contract (Art. 6(1)(b))</td></tr>
+      <tr><td>Processing payments for subscriptions and purchases</td><td>Performance of a contract (Art. 6(1)(b))</td></tr>
+      <tr><td>Precise location for matching</td><td>Consent (Art. 6(1)(a)), which you may withdraw</td></tr>
+      <tr><td>Optional identity verification</td><td>Consent (Art. 6(1)(a))</td></tr>
+      <tr><td>Special-category data you choose to share (e.g. information you reveal in your profile, questionnaire, or chats)</td><td>Your explicit consent (Art. 9(2)(a))</td></tr>
+      <tr><td>Analytics, crash/error monitoring, product improvement</td><td>Legitimate interests (Art. 6(1)(f)) in operating and improving a secure service</td></tr>
+      <tr><td>Safety, abuse prevention, blocking and reporting</td><td>Legitimate interests (Art. 6(1)(f)) in keeping users safe</td></tr>
+      <tr><td>Complying with legal obligations and responding to lawful requests</td><td>Legal obligation (Art. 6(1)(c))</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Where we rely on consent, you can withdraw it at any time without affecting processing that already took place. Where we rely on legitimate interests, you have the right to object (see <a href="#rights">Your Privacy Rights</a>).</p>
+
+  <h2 id="processors">5. Third-Party Processors &amp; Sub-processors</h2>
+  <p>We share personal information with the service providers below strictly to operate Roomies. Each acts as our processor/sub-processor (or, for payments and verification, as an independent controller for its own regulated functions). We do not sell your personal information to any of them.</p>
+  <div class="table-scroll">
+  <table>
+    <thead>
+      <tr><th>Processor</th><th>Purpose</th><th>Data it receives</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Firebase Authentication (Google)</td>
+        <td>Account authentication (email/password, Google, Apple); verifying sign-in on every request</td>
+        <td>Email, name, profile picture, auth provider identifier, and (where applicable) phone information; a sign-in token accompanies authenticated requests</td>
+      </tr>
+      <tr>
+        <td>Firebase Cloud Messaging (Google)</td>
+        <td>Push-notification delivery infrastructure (e.g. new match, new message)</td>
+        <td>Integrated in the app, but as of the effective date no device token is transmitted to or stored by our backend and no server-side push is dispatched, so FCM does not yet receive a device token from us (see the note in §2). When server-side delivery is enabled, FCM will receive a device notification token plus notification metadata such as sender name, conversation, and match name — never message bodies.</td>
+      </tr>
+      <tr>
+        <td>Firebase Analytics (Google)</td>
+        <td>Mobile product analytics</td>
+        <td>An app user identifier and event names/properties and user traits</td>
+      </tr>
+      <tr>
+        <td>Stripe (Identity)</td>
+        <td>Optional government-ID and selfie identity verification</td>
+        <td>Your ID document and selfie, captured directly in Stripe's interface (we do not receive them); we receive only the verification result. A user identifier is attached to the session.</td>
+      </tr>
+      <tr>
+        <td>Stripe (Payments)</td>
+        <td>Subscriptions, billing, and one-time purchases via hosted checkout</td>
+        <td>Email, a user identifier, Stripe customer/subscription/price identifiers, amounts and currency, and subscription state. Card details are handled entirely by Stripe.</td>
+      </tr>
+      <tr>
+        <td>Cloudflare R2</td>
+        <td>Profile-photo and object storage</td>
+        <td>Your uploaded profile photos (image files), stored under keys scoped to your account</td>
+      </tr>
+      <tr>
+        <td>Google Maps Platform (Places &amp; Geocoding)</td>
+        <td>City/neighborhood autocomplete and geocoding for location and target-area selection</td>
+        <td>The place/city text you type and the resolved place identifiers and coordinates (no other personal identifiers)</td>
+      </tr>
+      <tr>
+        <td>PostHog</td>
+        <td>Product analytics across the app and backend</td>
+        <td>A user/distinct identifier and event names/properties and user traits (e.g. purchase and verification-flow events)</td>
+      </tr>
+      <tr>
+        <td>Sentry</td>
+        <td>Crash, error, and performance monitoring</td>
+        <td>Exception details, stack traces, error context, breadcrumbs, and sampled performance traces</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Analytics and monitoring providers (PostHog, Firebase Analytics, and Sentry) are enabled by configuration and do not receive data when disabled. We may engage additional processors over time and will update this list accordingly.</p>
+  <p class="backtop"><a href="#scope">↑ Back to top</a></p>
+
+  <h2 id="transfers">6. International Data Transfers</h2>
+  <p>Roomies relies on service providers that operate globally, and your information — including for users in the EEA and UK — may be processed in the United States and other countries that may not provide the same level of data protection as your home country. Where we transfer personal data out of the EEA or UK, we rely on appropriate safeguards, such as the European Commission's Standard Contractual Clauses (and the UK Addendum) and the data-transfer frameworks and contractual commitments offered by our providers (for example, Google, Stripe, and Cloudflare). You may request more information about these safeguards using the contact details below.</p>
+
+  <h2 id="retention">7. Data Retention</h2>
+  <p>We keep your personal information for as long as your account is active and as needed to provide the service. Specific practices:</p>
+  <ul>
+    <li><strong>Account data</strong> is retained until you delete your account (see <a href="#deletion">Account &amp; Data Deletion</a>), after which it is removed from our database as described below.</li>
+    <li><strong>Individual photos</strong> you remove are marked deleted in our database and the underlying file is queued for removal from object storage on a best-effort background basis.</li>
+    <li><strong>Analytics events</strong> sent to our analytics providers are retained under those providers' settings and are not automatically deleted by an in-app account deletion. If you want analytics data associated with you erased, contact us.</li>
+    <li><strong>Verification and billing records held by Stripe</strong> (including ID documents you submitted to Stripe Identity and Stripe's billing records) are retained by Stripe under its own policies, independent of your Roomies account deletion.</li>
+    <li>We do not currently operate fixed, time-based automatic purges beyond the deletion flows described here. We may introduce retention windows in the future and will update this Policy if we do.</li>
+  </ul>
+
+  <h2 id="security">8. Security</h2>
+  <p>We take reasonable technical and organizational measures to protect your information. Authentication is delegated to Firebase, every API request is authenticated, file uploads go directly to storage through short-lived, time-limited links, payment card data never touches our servers, and we monitor for errors and abuse. Photos are stored under per-account keys, and access to data is limited to what is needed to run the service.</p>
+  <p>You should be aware of two important limitations: chat messages are stored in plaintext and are not end-to-end encrypted, and no method of transmission or storage is completely secure. We cannot guarantee absolute security, and you share information at your own risk. Please use caution about what you reveal in your profile, questionnaire, and chats.</p>
+
+  <h2 id="rights">9. Your Privacy Rights</h2>
+
+  <h3>For everyone</h3>
+  <p>You can access and update much of your profile and preference information directly in the app, and you can delete your account at any time (see below).</p>
+
+  <h3>GDPR rights (EEA/UK)</h3>
+  <p>If you are in the EEA or UK, you have the right to: access your personal data; correct inaccurate data; request erasure; restrict or object to certain processing; data portability (receive your data in a portable format); and withdraw consent where processing is based on consent. You also have the right to lodge a complaint with your local data protection authority.</p>
+
+  <h3>California rights (CCPA/CPRA)</h3>
+  <p>If you are a California resident, you have the right to know what personal information we collect and how we use and disclose it; the right to request access to and deletion of your personal information; the right to correct inaccurate information; the right to data portability; and the right to opt out of the "sale" or "sharing" of your personal information. You will not be discriminated against for exercising these rights.</p>
+
+  <h3>We do not sell your data</h3>
+  <p><strong>Roomies does not sell your personal information, and we do not "share" it for cross-context behavioral advertising,</strong> as those terms are defined under California law. The disclosures we make are to the service providers listed in §5 solely to operate the app. Because we do not sell or share your personal information, there is no opt-out of sale/share to perform; if our practices ever change, we will provide a clear opt-out mechanism and update this Policy.</p>
+  <p>Our analytics and monitoring providers are contractually restricted to processing data to provide services to Roomies and are not permitted to use it for their own cross-context behavioral advertising.</p>
+
+  <h3>Sensitive personal information (CPRA)</h3>
+  <p>California residents have the right to limit the use and disclosure of sensitive personal information. The main category of sensitive personal information we handle is your <strong>precise geolocation</strong>. We use it only to provide the roommate-matching service — a purpose for which the CPRA does not require us to offer a separate limit option — and we do not use it to infer characteristics about you.</p>
+
+  <p>To exercise any of these rights, use the in-app account deletion for deletion, or contact us at <a href="mailto:privacy@roomiesapp.app">privacy@roomiesapp.app</a>. We will verify your request (typically by reference to your account) and respond within the timeframes required by applicable law. You may use an authorized agent where permitted.</p>
+  <p class="backtop"><a href="#scope">↑ Back to top</a></p>
+
+  <h2 id="deletion">10. Account &amp; Data Deletion</h2>
+  <p>You can delete your Roomies account at any time directly inside the app: go to <strong>Settings &gt; Account &gt; Delete Account</strong> and confirm. You do not need to email us to delete your account.</p>
+  <p>When you delete your account, we permanently delete your user record from our database. Because related data is linked to your account, this also removes your profile, profile photos, questionnaire answers, preference filters, swipes, matches, conversations, messages, reports you filed or received, blocks, your verification status records, and your stored billing references (customer, subscription, and purchase records held in our app database). We also delete your Firebase authentication identity, and we queue removal of your stored profile photos from object storage.</p>
+  <p>Please note the following:</p>
+  <ul>
+    <li>Photo removal from object storage runs as a background, best-effort process and may not be instantaneous.</li>
+    <li>Documents you submitted to Stripe Identity, and Stripe's own billing records, are retained by Stripe under its policies and are not erased by this in-app flow; contact Stripe or us if you need those addressed.</li>
+    <li>Analytics events previously sent to our analytics providers are not automatically erased by in-app deletion. Contact us if you want those removed.</li>
+    <li>If a deletion does not complete in the app, you can contact us for help.</li>
+  </ul>
+  <p>For deletion help, or to exercise any GDPR or CCPA right, contact us at <a href="mailto:privacy@roomiesapp.app">privacy@roomiesapp.app</a>.</p>
+
+  <h2 id="children">11. Children's Privacy</h2>
+  <p>Roomies is intended only for adults aged <strong>18 and over</strong>. We do not knowingly collect personal information from anyone under 18. If you are under 18, do not use Roomies. If we learn that we have collected information from a person under 18, we will delete it. If you believe a minor has provided us information, contact us at <a href="mailto:privacy@roomiesapp.app">privacy@roomiesapp.app</a>.</p>
+
+  <h2 id="push">12. Push Notifications</h2>
+  <p>Roomies is designed to send push notifications about events such as new matches, new messages, and completed identity verification. We intentionally do <strong>not</strong> include message bodies or other sensitive content in push payloads. You can grant or deny notification permission when prompted, and you can turn notifications off at any time in your device settings. As noted in §2, server-side push dispatch is not yet active and device push tokens are not currently stored; this section will be updated when that changes.</p>
+
+  <h2 id="changes">13. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. When we make material changes, we will revise the "last updated" date above and, where appropriate, provide additional notice in the app. Your continued use of Roomies after an update means you accept the revised Policy.</p>
+
+  <h2 id="contact">14. Contact Us</h2>
+  <p>If you have questions about this Policy or your personal information, or to exercise your rights, contact us:</p>
+  <ul>
+    <li><strong>Email:</strong> <a href="mailto:privacy@roomiesapp.app">privacy@roomiesapp.app</a></li>
+    <li><strong>Data controller:</strong> Devron Watts, 2264 Mackenzie Way, Yuba City, California 95991</li>
+  </ul>
+  <p class="backtop"><a href="#scope">↑ Back to top</a></p>
+
+</main>
+
+<footer class="site">
+  <div class="rule"></div>
+  <p><strong>Roomies</strong> — Privacy Policy. Last updated June 4, 2026. See also our <a href="../terms/">Terms of Service</a>.</p>
+</footer>
+
+</div>
+</body>
+</html>

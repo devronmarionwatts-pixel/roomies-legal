@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<!--
+  FOUNDER ACTION REQUIRED — fill these placeholders before publishing:
+  {{COMPANY_LEGAL_NAME}}        — the legal entity that operates Roomies (no registered Inc/LLC name was found in the repo; "Sentiencecai" is only implied by the bundle id com.Sentiencecai.Roomies).
+  {{CONTACT_EMAIL}}             — a real, monitored support/legal email (the only emails in the repo are dev/test addresses like admin@roomies.dev and are NOT valid support contacts).
+  {{GOVERNING_LAW_JURISDICTION}}— the state/country whose law governs these Terms and where disputes are resolved.
+  {{COMPANY_ADDRESS}}           — the operator's mailing address for legal notices (optional but recommended).
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Service — Roomies</title>
+<style>
+  :root {
+    --bg: #f6f7f9;
+    --card: #ffffff;
+    --ink: #1f2430;
+    --muted: #5b6472;
+    --accent: #3b5bdb;
+    --accent-soft: #eef1fd;
+    --border: #e4e7ec;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+    line-height: 1.65;
+    font-size: 17px;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px 64px;
+  }
+  header.page {
+    background: linear-gradient(135deg, #3b5bdb 0%, #5b76e8 100%);
+    color: #fff;
+    padding: 40px 20px 32px;
+    margin-bottom: 28px;
+  }
+  header.page .inner {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  header.page .brand {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    opacity: 0.85;
+  }
+  header.page h1 {
+    margin: 8px 0 6px;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #fff;
+  }
+  header.page .dates {
+    font-size: 14px;
+    opacity: 0.9;
+    margin: 0;
+  }
+  h2 {
+    font-size: 21px;
+    margin: 40px 0 10px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--accent-soft);
+    scroll-margin-top: 16px;
+  }
+  h3 {
+    font-size: 17px;
+    margin: 22px 0 6px;
+    color: var(--ink);
+  }
+  p { margin: 12px 0; }
+  ul { margin: 12px 0; padding-left: 22px; }
+  li { margin: 7px 0; }
+  a { color: var(--accent); }
+  a:hover { text-decoration: underline; }
+  .toc {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 8px;
+  }
+  .toc h2 {
+    border: none;
+    margin: 0 0 8px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--muted);
+    padding: 0;
+  }
+  .toc ol {
+    margin: 0;
+    padding-left: 20px;
+    columns: 2;
+    column-gap: 28px;
+    font-size: 15px;
+  }
+  .toc li { margin: 4px 0; }
+  .toc a { color: var(--ink); text-decoration: none; }
+  .toc a:hover { color: var(--accent); text-decoration: underline; }
+  .callout {
+    background: var(--accent-soft);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin: 18px 0;
+    font-size: 16px;
+  }
+  .callout strong { color: var(--ink); }
+  .legal-emph {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+  }
+  .placeholder {
+    background: #fff4e5;
+    border: 1px dashed #e0a85a;
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.9em;
+    color: #8a5a14;
+    white-space: nowrap;
+  }
+  footer.page {
+    margin-top: 48px;
+    padding-top: 22px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 14px;
+  }
+  footer.page .updated { font-weight: 600; color: var(--ink); }
+  .fineprint {
+    font-size: 12.5px;
+    color: var(--muted);
+    margin-top: 18px;
+    line-height: 1.55;
+  }
+  .backtop {
+    font-size: 13px;
+    color: var(--muted);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 4px;
+  }
+  @media (max-width: 560px) {
+    body { font-size: 16px; }
+    header.page h1 { font-size: 25px; }
+    .toc ol { columns: 1; }
+  }
+</style>
+</head>
+<body>
+
+<header class="page">
+  <div class="inner">
+    <div class="brand">Roomies</div>
+    <h1>Terms of Service</h1>
+    <p class="dates">Effective &amp; last updated: June 4, 2026</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <p>These Terms of Service (the &ldquo;Terms&rdquo;) are a binding agreement between you and Devron Watts (&ldquo;Roomies,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;), the operator of the Roomies mobile application and related services (collectively, the &ldquo;Service&rdquo;). Please read them carefully. By creating an account or using the Service, you agree to these Terms and to our <a href="../privacy/">Privacy Policy</a>.</p>
+
+  <nav class="toc" aria-label="Table of contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#acceptance">Acceptance of These Terms</a></li>
+      <li><a href="#eligibility">Eligibility</a></li>
+      <li><a href="#description">Description of the Service</a></li>
+      <li><a href="#accounts">Accounts &amp; Firebase Authentication</a></li>
+      <li><a href="#verification">Identity Verification</a></li>
+      <li><a href="#content">User Content &amp; Photos</a></li>
+      <li><a href="#conduct">Acceptable Use &amp; Prohibited Conduct</a></li>
+      <li><a href="#safety">Safety Disclaimer</a></li>
+      <li><a href="#matching">Matching &amp; No Guarantee</a></li>
+      <li><a href="#payments">Payments &amp; Subscriptions</a></li>
+      <li><a href="#moderation">Reporting, Blocking &amp; Moderation</a></li>
+      <li><a href="#termination">Termination &amp; Account Deletion</a></li>
+      <li><a href="#warranties">Disclaimers of Warranties</a></li>
+      <li><a href="#liability">Limitation of Liability</a></li>
+      <li><a href="#indemnification">Indemnification</a></li>
+      <li><a href="#disputes">Dispute Resolution &amp; Governing Law</a></li>
+      <li><a href="#changes">Changes to These Terms</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="acceptance">1. Acceptance of These Terms</h2>
+  <p>By downloading, accessing, registering for, or using the Service, you confirm that you have read, understood, and agree to be bound by these Terms. If you do not agree, do not use the Service. If you use the Service on behalf of another person, you represent that you are authorized to bind that person to these Terms.</p>
+  <p>These Terms incorporate our <a href="../privacy/">Privacy Policy</a> by reference. Your continued use of the Service after any update to these Terms constitutes acceptance of the updated Terms.</p>
+  <a class="backtop" href="#">&uarr; Back to top</a>
+
+  <h2 id="eligibility">2. Eligibility</h2>
+  <p>You must be at least <strong>18 years of age</strong> to create an account or use the Service. By using the Service, you represent and warrant that you are 18 or older and that you have the legal capacity to enter into these Terms.</p>
+  <div class="callout">
+    <p style="margin:0;"><strong>Roomies is a roommate-finding service.</strong> It is <strong>not a dating service</strong>, and it is not intended to facilitate romantic or sexual relationships. The Service is designed to help people find compatible potential roommates and housing companions.</p>
+  </div>
+  <p>Roomies is also <strong>not a tenant-screening service, a consumer reporting agency, or a background-check service</strong>. We do not generate consumer reports, credit reports, criminal-history reports, eviction records, or tenant-screening reports, and the Service may not be used as a substitute for any of these. You may not use the Service, or any information obtained through it, for any purpose governed by the U.S. Fair Credit Reporting Act (FCRA) or similar laws — including evaluating a person&rsquo;s eligibility for housing, credit, insurance, or employment.</p>
+  <a class="backtop" href="#">&uarr; Back to top</a>
+
+  <h2 id="description">3. Description of the Service</h2>
+  <p>Roomies lets you create a profile, build a lifestyle profile, complete a compatibility questionnaire, set location and roommate preferences, browse and express interest in (&ldquo;like&rdquo; or &ldquo;pass&rdquo;) other users, and chat in-app with users you have mutually matched with. The Service uses your answers, preferences, budget, move-in timing, and location to suggest potentially compatible roommates.</p>
+  <p>The Service is a neutral venue that connects users to one another. We do not own, rent, manage, list, or guarantee any housing, lease, room, or living arrangement, and we are not a party to any agreement, communication, or arrangement that you reach with another user. We may add, change, suspend, or remove features of the Service at any time.</p>
+  <a class="backtop" href="#">&uarr; Back to top</a>
+
+  <h2 id="accounts">4. Accounts &amp; Firebase Authentication</h2>
+  <p>To use the Service you must create an account. Authentication is handled by <strong>Google Firebase Authentication</strong>, which lets you sign in using email and password, Google Sign-In, or Apple Sign-In. Your use of Firebase sign-in is subject to Google&rsquo;s and Apple&rsquo;s applicable terms in addition to these Terms. We verify your sign-in credentials through Firebase on each request and create a corresponding user record associated with your authentication identifier.</p>
+  <p>You agree to:</p>
+  <ul>
+    <li>Provide accurate, current, and complete information and keep it up to date;</li>
+    <li>Maintain the security and confidentiality of your sign-in credentials;</li>
+    <li>Be responsible for all activity that occurs under your account; and</li>
+    <li>Notify us promptly if you believe your account has been compromised.</li>
+  </ul>
+  <p>You may not create more than one account, create an account for anyone other than yourself, share your account, or create an account if we have previously banned you or removed your access. Each account is personal to you and non-transferable.</p>
+  <a class="backtop" href="#">&uarr; Back to top</a>
+
+  <h2 id="verification">5. Identity Verification</h2>
+  <p>Roomies offers an <strong>optional, voluntary identity-verification feature</strong> powered by <strong>Stripe Identity</strong>. If you choose to verify, Stripe&rsquo;s native flow asks you to capture a government-issued identity document and a selfie. This capture and matching is performed by Stripe within Stripe&rsquo;s own interface — <strong>Roomies does not collect or store your raw identity document or selfie</strong>. We receive only the verification status/result and a session reference from Stripe, and, where verification succeeds, we display a <strong>verified badge</strong> on your profile.</p>
+  <p>Verification is not required to use the Service. A verified badge indicates only that Stripe Identity returned a successful result for the submitted document and selfie at a point in time. It is <strong>not a guarantee</strong> of a user&rsquo;s identity, character, intentions, background, or suitability as a roommate, and you should not rely on it as such. Your use of Stripe Identity is also subject to Stripe&rsquo;s terms and privacy policy, and Stripe may retain the documents you submit to it independently of Roomies.</p>
+  <a class="backtop" href="#">&uarr; Back to top</a>
+
+  <h2 id="content">6. User Content &amp; Photos</h2>
+  <p>&ldquo;User Content&rdquo; means everything you submit to or through the Service, including your profile information, bio, questionnaire answers, preferences, photos, and chat messages. You retain ownership of your User Content.</p>
+  <h3>License you grant us</h3>
+  <p>By submitting User Content, you grant Roomies a worldwide, non-exclusive, royalty-free, sublicensable license to host, store, reproduce, adapt (for example, to resize or format photos), display, and distribute that content <strong>solely as needed to operate, provide, secure, and improve the Service</strong>. Profile photos are stored on our object-storage provider, <strong>Cloudflare R2</strong>, and served to other users through the Service. This license ends when your User Content is deleted, except for residual copies retained in backups or as required by law, and except for content already shared with other users (such as sent chat messages).</p>
+  <h3>Your responsibility</h3>
+  <p>You represent and warrant that you own or have the necessary rights to your User Content and that it does not violate these Terms or any law or third-party right. You are solely responsible for your User Content.</p>
+  <h3>Content rules</h3>
+  <p>User Content — including profile photos — must not:</p>
+  <ul>
+    <li>Depict nudity, sexually explicit material, or violence;</li>
+    <li>Show anyone other than you as the primary subject of your photos, or impersonate another person;</li>
+    <li>Include another person&rsquo;s image or personal information without their consent;</li>
+    <li>Contain hate speech, harassment, threats, or content that is unlawful, fraudulent, defamatory, or deceptive;</li>
+    <li>Include contact details, payment requests, advertisements, or spam intended to move users off-platform for improper purposes; or</li>
+    <li>Infringe any intellectual-property, privacy, or other right.</li>
+  </ul>
+  <p>We may review, refuse, remove, or restrict any User Content at our discretion, but we are not obligated to monitor content and do not guarantee that we will.</p>
+  <a class="backtop" href="#">&uarr; Back to top</a>
+
+  <h2 id="conduct">7. Acceptable Use &amp; Prohibited Conduct</h2>
+  <p>You agree not to, and not to attempt to:</p>
+  <ul>
+    <li>Harass, bully, threaten, stalk, intimidate, or abuse any user, or send unwanted, harmful, or sexually explicit communications;</li>
+    <li><strong>Discriminate</strong> against any person, or post listings or messages that express a preference, limitation, or discrimination, based on race, color, religion, national origin, sex, gender identity, sexual orientation, familial status, disability, or any other characteristic protected under applicable fair-housing or anti-discrimination laws;</li>
+    <li>Engage in scams, fraud, phishing, money-flipping, advance-fee schemes, or any request for deposits, rent, or payment that violates these Terms or the law;</li>
+    <li>Facilitate or solicit any <strong>illegal subletting</strong>, lease violation, or housing arrangement that breaches an applicable lease, law, ordinance, or fair-housing rule;</li>
+    <li>Impersonate any person or entity, or misrepresent your identity, age, affiliation, or intentions;</li>
+    <li>Solicit money, personal financial information, or commercial business from other users, or use the Service for advertising or commercial recruitment;</li>
+    <li>Use the Service for any purpose covered by the FCRA or similar laws, or to screen, vet, or report on any individual for housing, credit, insurance, or employment;</li>
+    <li>Collect, scrape, harvest, or store other users&rsquo; data, or use bots, crawlers, or automated means to access the Service;</li>
+    <li>Interfere with, disrupt, overload, reverse-engineer, or attempt to gain unauthorized access to the Service, its systems, or other users&rsquo; accounts; or</li>
+    <li>Violate any applicable law or regulation, or encourage or enable any of the above.</li>
+  </ul>
+  <p>Violating this section may result in content removal, suspension, or permanent termination of your account, and where appropriate, referral to law enforcement.</p>
+  <a class="backtop" href="#">&uarr; Back to top</a>
+
+  <h2 id="safety">8. Safety Disclaimer</h2>
+  <div class="callout">
+    <p style="margin:0 0 10px;" class="legal-emph"><strong>Please read this section carefully. Your safety is your responsibility.</strong></p>
+    <p style="margin:0;">Roomies is a <strong>platform that connects people</strong>. We do not conduct background checks, criminal-history checks, credit checks, identity investigations, or tenant screening on users, and we do not verify users&rsquo; statements, photos, finances, references, rental history, or intentions (the optional Stripe Identity badge is the only verification we offer, and it is limited as described above).</p>
+  </div>
+  <p>You are interacting with, and may choose to meet and live with, <strong>strangers</strong>. You must exercise good judgment and caution at all times. We strongly encourage you to: communicate within the app until you are comfortable; meet in a public place for the first time; tell a friend or family member where you are going; conduct your own independent due diligence (including any background or tenant checks you lawfully wish to obtain from an appropriate provider) before sharing personal information, sending money, signing any agreement, or moving in with anyone; and trust your instincts and disengage if anything feels wrong.</p>
+  <p>We make <strong>no representation, warranty, or guarantee</strong> regarding the identity, conduct, character, compatibility, or suitability of any user, or the safety, legality, or quality of any housing arrangement. You assume all risk associated with your interactions with other users and any decision to communicate with, meet, or live with them.</p>
+  <a class="backtop" href="#">&uarr; Back to top</a>
+
+  <h2 id="matching">9. Matching &amp; No Guarantee</h2>
+  <p>The Service suggests potential roommates using your questionnaire answers, preferences, budget, move-in timing, and location, and presents candidates with a compatibility indication. These suggestions are <strong>automated estimates only</strong>. We do not guarantee that you will receive matches, that any match will be compatible or suitable, that another user will respond, or that any roommate relationship or housing arrangement will result from your use of the Service. Compatibility scores are informational and are not a promise of any outcome.</p>
+  <a class="backtop" href="#">&uarr; Back to top</a>
+
+  <h2 id="payments">10. Payments &amp; Subscriptions</h2>
+  <p>The Service may offer paid features, including subscriptions and one-time purchases (such as profile boosts). Payments are processed by <strong>Stripe</strong> through a secure checkout and billing flow; Roomies does not collect or store your full payment card details. When you make a purchase, you authorize the applicable charge to your selected payment method and agree to the price, billing period, and any renewal terms presented at the point of sale.</p>
+  <p>Unless otherwise stated at purchase or required by law: subscriptions automatically renew for successive periods until you cancel; and fees already paid are generally non-refundable. At or before the point of purchase we will present the subscription title, its duration, the price per period, the renewal cadence, and how to cancel, together with links to these Terms and our Privacy Policy. If you purchased directly through Roomies, you can manage or cancel through the Stripe billing portal or the in-app billing controls; if you purchased through the Apple App Store or Google Play, you must manage or cancel through that store&rsquo;s subscription settings, and that store&rsquo;s billing, renewal, and refund policies also apply. Cancellation takes effect at the end of the then-current billing period.</p>
+  <p>We may change our prices and offerings, and we may introduce, modify, or discontinue paid features at any time, with notice where required by law. Changes will not retroactively affect a subscription period you have already paid for.</p>
+  <a class="backtop" href="#">&uarr; Back to top</a>
+
+  <h2 id="moderation">11. Reporting, Blocking &amp; Moderation</h2>
+  <p>The Service provides tools to <strong>report</strong> users or content and to <strong>block</strong> other users. We encourage you to report any conduct that violates these Terms or makes you feel unsafe. When you block a user, you and that user will no longer be able to interact through the Service.</p>
+  <p>We operate a moderation process and may review reports and content. We may, at our discretion and without obligation, remove content, issue warnings, limit features, suspend accounts, or permanently ban users who violate these Terms or applicable law. We do not guarantee that we will review or act on every report, or that we will act within any particular time, and our action or inaction does not waive any rights.</p>
+  <a class="backtop" href="#">&uarr; Back to top</a>
+
+  <h2 id="termination">12. Termination &amp; Account Deletion</h2>
+  <p>You may stop using the Service at any time. You can <strong>delete your account from within the app</strong>, under <em>Settings &rarr; Account &rarr; Delete Account</em>. Deleting your account permanently removes your account record and associated data — including your profile, photos, questionnaire answers, preferences, matches, conversations, and messages — and deletes your Firebase authentication identity. Your profile photos stored on Cloudflare R2 are queued for deletion as part of this process.</p>
+  <p>Some information may persist after deletion: copies retained in backups for a limited time, content already shared with other users (such as messages you have sent), records we must keep to comply with law or resolve disputes, and data held by third-party providers under their own terms — for example, documents you submitted to Stripe Identity, and billing records held by Stripe, are retained by Stripe independently of Roomies. Aggregated or de-identified analytics data that cannot reasonably be linked to you may also be retained.</p>
+  <p>We may suspend or terminate your account or access at any time, with or without notice, if you violate these Terms, create risk or legal exposure, or if we discontinue the Service. Sections that by their nature should survive termination — including User Content licenses already granted, disclaimers, limitations of liability, indemnification, and dispute-resolution provisions — survive.</p>
+  <a class="backtop" href="#">&uarr; Back to top</a>
+
+  <h2 id="warranties">13. Disclaimers of Warranties</h2>
+  <p class="legal-emph">The Service is provided &ldquo;as is&rdquo; and &ldquo;as available,&rdquo; without warranties of any kind, whether express, implied, or statutory.</p>
+  <p>To the fullest extent permitted by law, we disclaim all warranties, including any implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement, and any warranties arising from course of dealing or usage of trade. We do not warrant that the Service will be uninterrupted, secure, error-free, or free of harmful components, that any defects will be corrected, or that any user, match, communication, or housing arrangement will meet your expectations. You use the Service, and interact with other users, at your own risk. Some jurisdictions do not allow certain warranty exclusions, so some of the above may not apply to you.</p>
+  <a class="backtop" href="#">&uarr; Back to top</a>
+
+  <h2 id="liability">14. Limitation of Liability</h2>
+  <p class="legal-emph">To the fullest extent permitted by law, Roomies and its officers, directors, employees, and agents will not be liable for any indirect, incidental, special, consequential, exemplary, or punitive damages, or for any loss of profits, data, goodwill, or other intangible losses, arising out of or relating to the Service or these Terms.</p>
+  <p>This includes, without limitation, any damages arising from your interactions with other users; any decision to communicate with, meet, or live with another user; any housing arrangement, lease, dispute, injury, or loss; any conduct or content of any user; or any unauthorized access to your data. This applies regardless of the legal theory and even if we have been advised of the possibility of such damages.</p>
+  <p>To the fullest extent permitted by law, our total aggregate liability for all claims relating to the Service or these Terms will not exceed the greater of (a) the total amount you paid us for the Service in the twelve (12) months before the event giving rise to the claim, or (b) one hundred U.S. dollars (US$100). Some jurisdictions do not allow certain limitations, so some of the above may not apply to you.</p>
+  <a class="backtop" href="#">&uarr; Back to top</a>
+
+  <h2 id="indemnification">15. Indemnification</h2>
+  <p>You agree to indemnify, defend, and hold harmless Roomies and its officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses (including reasonable legal fees) arising out of or related to: your use of the Service; your User Content; your interactions, communications, meetings, or housing arrangements with other users; your violation of these Terms or any law; or your violation of any third-party right. We may assume the exclusive defense and control of any matter subject to indemnification, in which case you agree to cooperate with us.</p>
+  <a class="backtop" href="#">&uarr; Back to top</a>
+
+  <h2 id="disputes">16. Dispute Resolution &amp; Governing Law</h2>
+  <p>These Terms and any dispute arising out of or relating to them or the Service are governed by the laws of the State of California, without regard to its conflict-of-laws rules. You and Roomies agree to submit to the exclusive jurisdiction of the courts located in the State of California for any dispute not subject to an alternative resolution process, except where applicable law gives you the right to bring proceedings in your local courts.</p>
+  <p>Before filing any formal claim, you agree to first contact us at <a href="mailto:privacy@roomiesapp.app">privacy@roomiesapp.app</a> and attempt in good faith to resolve the dispute informally for at least thirty (30) days. To the extent permitted by law, you agree that disputes will be resolved on an individual basis and that you waive any right to participate in a class or representative action. Nothing in this section limits any non-waivable rights you have under the mandatory laws of your place of residence.</p>
+  <a class="backtop" href="#">&uarr; Back to top</a>
+
+  <h2 id="changes">17. Changes to These Terms</h2>
+  <p>We may update these Terms from time to time. When we make material changes, we will update the &ldquo;last updated&rdquo; date above and may provide additional notice in the app or by other reasonable means. Changes take effect when posted unless we state otherwise. Your continued use of the Service after changes take effect means you accept the updated Terms; if you do not agree, you must stop using the Service and may delete your account.</p>
+  <a class="backtop" href="#">&uarr; Back to top</a>
+
+  <h2 id="contact">18. Contact</h2>
+  <p>If you have questions about these Terms or the Service, contact us at:</p>
+  <ul>
+    <li>Email: <a href="mailto:privacy@roomiesapp.app">privacy@roomiesapp.app</a></li>
+    <li>Operator: Devron Watts<br>2264 Mackenzie Way, Yuba City, California 95991</li>
+  </ul>
+  <a class="backtop" href="#">&uarr; Back to top</a>
+
+  <footer class="page">
+    <p><span class="updated">Last updated: June 4, 2026.</span> See also our <a href="../privacy/">Privacy Policy</a>.</p>
+  </footer>
+
+</div>
+</body>
+</html>
