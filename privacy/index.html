@@ -184,7 +184,7 @@
   <div class="inner">
     <div class="brand">Roomies</div>
     <h1>Privacy Policy</h1>
-    <div class="dates">Effective date &amp; last updated: June 4, 2026</div>
+    <div class="dates">Effective date &amp; last updated: June 8, 2026</div>
   </div>
 </header>
 
@@ -222,13 +222,13 @@
   <p>We collect the categories of information below. Most of it is information you provide directly; some comes from your device or from the third-party services we rely on to operate the app.</p>
 
   <h3>Identity &amp; account information</h3>
-  <p>When you sign up, authentication is handled by Firebase Authentication (email and password, Google Sign-In, or Apple Sign-In). We receive and store your email address, an authentication provider identifier, and, where you provide them, your name and profile picture, and optionally a phone number. We also store account metadata such as your account status, role, when you were last active, and timestamps for when your account was created and updated.</p>
+  <p>When you sign up, authentication is handled by Firebase Authentication (email and password, Google Sign-In, or Apple Sign-In). We receive and store your email address, an authentication provider identifier, and, where you provide them, your name and profile picture. We also store account metadata such as your account status, role, when you were last active, and timestamps for when your account was created and updated.</p>
 
   <h3>Profile information</h3>
   <p>The profile you build for matching, including your first name, age, gender, a free-text bio (up to 1,000 characters), occupation, school, budget range, desired move-in date, lease term, your city, and whether you are willing to relocate.</p>
 
-  <h3>Location information (precise and approximate)</h3>
-  <p>To match you with roommates in the right place, we store the location and target area you select. These are stored as precise geographic coordinates (full-precision latitude and longitude, not deliberately coarsened) derived from your device or from the place you choose. We also store your search preferences such as search radius, preferred city, acceptable genders, age range, and budget range. Location lookups (city and neighborhood autocomplete and geocoding) are performed through Google Maps Platform via our backend.</p>
+  <h3>Location information (approximate / city-level)</h3>
+  <p>To match you with roommates in the right place, we store the city or target area you select by typing a place name. We do <strong>not</strong> access your device's GPS or precise location, and the app requests no location permission. The place you choose is geocoded on our servers to the approximate geographic center (centroid) of that city or area — an approximate, city-level (coarse) location, not your device's position. We also store your search preferences such as search radius, preferred city, acceptable genders, age range, and budget range. Location lookups (city and neighborhood autocomplete and geocoding) are performed through Google Maps Platform via our backend.</p>
 
   <h3>Photos</h3>
   <p>The photos you upload to your profile. Image files are uploaded directly to our object storage provider (Cloudflare R2) using time-limited upload links; our database stores the object key and the public URL, along with attributes such as sort order, which photo is primary, dimensions, and file size.</p>
@@ -243,7 +243,7 @@
   <p>If you choose to verify your identity, the document and selfie capture happens inside Stripe Identity's own interface. We do <strong>not</strong> receive or store your raw ID document or selfie image; we store only the verification provider, the resulting status (for example, pending, verified, rejected, or expired), the time of verification, your badge level, and limited session metadata (such as the Stripe session identifier and any error code). Stripe retains the underlying documents under its own policies.</p>
 
   <h3>Payments &amp; billing information</h3>
-  <p>If you purchase a subscription or a one-time feature (such as a profile boost), Stripe processes the payment through its hosted checkout. We do <strong>not</strong> receive or store your full payment card details. We store billing references such as a Stripe customer identifier, subscription and purchase identifiers, the price/product purchased, amount and currency, and subscription/purchase status.</p>
+  <p>Paid subscriptions and one-time features are not available in the current iOS version (1.0); the billing practices described in this section apply once in-app purchases become available in a future update. If you purchase a subscription or a one-time feature (such as a profile boost), Stripe processes the payment through its hosted checkout. We do <strong>not</strong> receive or store your full payment card details. We store billing references such as a Stripe customer identifier, subscription and purchase identifiers, the price/product purchased, amount and currency, and subscription/purchase status.</p>
 
   <h3>Usage &amp; analytics information</h3>
   <p>We collect product-analytics events to understand how the app is used and to improve it — for example, sign-in, account-deletion, and verification-flow events, identified by your account identifier — using PostHog and Firebase Analytics. We also keep usage counters such as your last-active time and daily like usage for rate limiting, and our backend keeps operational logs (with request identifiers) to run and debug the service.</p>
@@ -277,7 +277,7 @@
     <tbody>
       <tr><td>Creating your account and providing matching, profiles, and chat</td><td>Performance of a contract (Art. 6(1)(b))</td></tr>
       <tr><td>Processing payments for subscriptions and purchases</td><td>Performance of a contract (Art. 6(1)(b))</td></tr>
-      <tr><td>Precise location for matching</td><td>Consent (Art. 6(1)(a)), which you may withdraw</td></tr>
+      <tr><td>Approximate (city-level) location for matching</td><td>Performance of a contract (Art. 6(1)(b))</td></tr>
       <tr><td>Optional identity verification</td><td>Consent (Art. 6(1)(a))</td></tr>
       <tr><td>Special-category data you choose to share (e.g. information you reveal in your profile, questionnaire, or chats)</td><td>Your explicit consent (Art. 9(2)(a))</td></tr>
       <tr><td>Analytics, crash/error monitoring, product improvement</td><td>Legitimate interests (Art. 6(1)(f)) in operating and improving a secure service</td></tr>
@@ -299,7 +299,7 @@
       <tr>
         <td>Firebase Authentication (Google)</td>
         <td>Account authentication (email/password, Google, Apple); verifying sign-in on every request</td>
-        <td>Email, name, profile picture, auth provider identifier, and (where applicable) phone information; a sign-in token accompanies authenticated requests</td>
+        <td>Email, name, profile picture, and auth provider identifier; a sign-in token accompanies authenticated requests</td>
       </tr>
       <tr>
         <td>Firebase Cloud Messaging (Google)</td>
@@ -380,7 +380,7 @@
   <p>Our analytics and monitoring providers are contractually restricted to processing data to provide services to Roomies and are not permitted to use it for their own cross-context behavioral advertising.</p>
 
   <h3>Sensitive personal information (CPRA)</h3>
-  <p>California residents have the right to limit the use and disclosure of sensitive personal information. The main category of sensitive personal information we handle is your <strong>precise geolocation</strong>. We use it only to provide the roommate-matching service — a purpose for which the CPRA does not require us to offer a separate limit option — and we do not use it to infer characteristics about you.</p>
+  <p>California residents have the right to limit the use and disclosure of sensitive personal information. Roomies does <strong>not</strong> collect precise geolocation, and identity-verification documents are collected and held by Stripe rather than retained by Roomies. We therefore do not use or disclose sensitive personal information in a way that would require us to offer a separate limit option.</p>
 
   <p>To exercise any of these rights, use the in-app account deletion for deletion, or contact us at <a href="mailto:privacy@roomiesapp.app">privacy@roomiesapp.app</a>. We will verify your request (typically by reference to your account) and respond within the timeframes required by applicable law. You may use an authorized agent where permitted.</p>
   <p class="backtop"><a href="#scope">↑ Back to top</a></p>
@@ -418,7 +418,7 @@
 
 <footer class="site">
   <div class="rule"></div>
-  <p><strong>Roomies</strong> — Privacy Policy. Last updated June 4, 2026. See also our <a href="../terms/">Terms of Service</a>.</p>
+  <p><strong>Roomies</strong> — Privacy Policy. Last updated June 8, 2026. See also our <a href="../terms/">Terms of Service</a>.</p>
 </footer>
 
 </div>
